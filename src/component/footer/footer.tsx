@@ -24,17 +24,17 @@ export default function Footer() {
         <View style={styles.footer}>
             <View style={styles.footIcons}>
                 <TouchableOpacity style={styles.iconsAndNames} onPress={handleHome}>
-                    <SimpleLineIcons name="home" size={24} color="white" />
+                    <SimpleLineIcons name="home" size={24} color="grey" />
                     <Text>Home</Text>
                 </TouchableOpacity>
                 <TouchableOpacity style={styles.iconsAndNames} onPress={handleSchedule}>
 
-                    <MaterialCommunityIcons name="calendar-edit" size={24} color="white" />
+                    <MaterialCommunityIcons name="calendar-edit" size={24} color="grey" />
                     <Text>Agendar</Text>
                 </TouchableOpacity>
                 <TouchableOpacity style={styles.iconsAndNames} onPress={handlePerfil}>
 
-                    <Feather name="user" size={24} color="white" />
+                    <Feather name="user" size={24} color="grey" />
                     <Text>Perfil</Text>
                 </TouchableOpacity>
             </View>
@@ -44,11 +44,15 @@ export default function Footer() {
 
 const styles = StyleSheet.create({
     footer: {
-        backgroundColor: '#4682C4',
-        height: 50,
-        position: 'absolute',
-        bottom: 0,
-        width: '100%'
+        backgroundColor: '#C0D2F5',
+        height: 70,
+        display:'flex',
+        justifyContent:'center',
+        bottom: 10,
+        marginTop:'5%',
+        width:'90%',
+        marginLeft:'5%',
+        borderRadius:20
     },
     footIcons: {
         display: 'flex',

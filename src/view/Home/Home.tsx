@@ -1,4 +1,4 @@
-import { Dimensions, Image, ImageBackground, StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { ImageBackground, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import { AntDesign } from '@expo/vector-icons';
 import { FontAwesome5 } from '@expo/vector-icons';
 import Footer from "../../component/footer/footer";
@@ -13,11 +13,11 @@ import { ScrollView } from "react-native-gesture-handler";
 export default function Home() {
 
     return (
-        <SafeAreaView  style={styles.container}>
+        <SafeAreaView style={styles.container}>
             <Header />
 
-                <ImageBackground source={require('../../../assets/background.avif')} style={{ opacity: 1, flex:1 }}>
-            <ScrollView>
+            <ImageBackground source={require('../../../assets/background.avif')} style={{ opacity: 1, flex: 1 }}>
+                <ScrollView>
                     <View style={styles.viewUser}>
                         <AntDesign name="user" size={40} color="black" />
                     </View>
@@ -45,8 +45,8 @@ export default function Home() {
                     <Card />
                     <Avaliation />
 
-            </ScrollView>
-                </ImageBackground >
+                </ScrollView>
+            </ImageBackground >
             <Footer />
         </SafeAreaView>
     )

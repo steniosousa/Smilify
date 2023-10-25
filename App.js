@@ -1,23 +1,18 @@
-import { createStackNavigator } from '@react-navigation/stack';
 import Navigation from './Route';
-import { StyleSheet, View } from 'react-native';
-import { StatusBar } from 'expo-status-bar';
+import { StyleSheet, View, StatusBar } from 'react-native';
+import Footer from './src/component/footer/footer';
 
-const Stack = createStackNavigator();
 
 export default function App() {
   return (
     <View
-
       style={[
         StyleSheet.absoluteFillObject,
         { marginTop: StatusBar.currentHeight },
       ]}
     >
-      <StatusBar style="auto" />
+      <Navigation/>
 
-      <Navigation
-      />
     </View>
   );
 }
